@@ -1,0 +1,23 @@
+import java.util.*;
+public class evensumoddsum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int sum = 0;
+        int oddsum = 0;
+        int evensum = 0;
+        while (num != 0) {
+            int pop = num % 10;
+            if (pop % 2 == 0) {
+                evensum += pop;
+            } else {
+                oddsum += pop;
+            }
+            sum += pop;
+            num = num / 10;
+        }
+        System.out.println("The sum is: "+sum);
+        System.out.println("The odd sum is: "+oddsum);
+        System.out.println("The even sum is: "+evensum);
+    }
+}
