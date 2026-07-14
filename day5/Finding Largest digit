@@ -1,0 +1,17 @@
+import java.util.*;
+public class largestdigit {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num=sc.nextInt();
+        int maxnum=0;
+        while(num!=0){
+            int pop=num%10;
+            if(pop>maxnum){
+               maxnum=pop;
+            }
+            num/=10;
+        }
+        System.out.println("The largest digit is: "+maxnum);
+    }
+}
