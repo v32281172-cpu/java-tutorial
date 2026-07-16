@@ -1,0 +1,53 @@
+import java.util.*;
+public class evenodddigitsum {
+    public static void main(String[]args) {
+        int[] arr = {1, 23, 456, 34, 632, 65};
+        int oddsum = 0;
+        int evensum = 0;
+        for (int n : arr) {
+            int org=n;
+            int count=0;
+            while(n!=0){
+                int pop=n%10;
+                count++;
+                n/=10;
+            }
+            if(count%2==0){
+                evensum+=org;
+            }
+            else if(count%2!=0){
+                oddsum+=org;
+            }
+        }
+        System.out.println("Evensum: "+ evensum);
+        System.out.println("Oddsum: "+ oddsum);
+    }
+}
+
+
+
+import java.util.*;
+public class evenodddigitsum {
+    public static void main(String[]args) {
+        int[] arr = {12, 23, 46, 34, 62, 65};
+        int oddsum = 0;
+        int evensum = 0;
+        for (int n : arr) {
+            int org=n;
+            int sum=0;
+            while(n!=0){
+                int pop=n%10;
+                n/=10;
+                sum+=pop;
+            }
+            if(sum%2==0){
+                evensum+=org;
+            }
+            else if(sum%2!=0){
+                oddsum+=org;
+            }
+        }
+        System.out.println("Evensum: "+ evensum);
+        System.out.println("Oddsum: "+ oddsum);
+    }
+}
