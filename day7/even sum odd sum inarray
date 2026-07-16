@@ -1,0 +1,21 @@
+import java.util.*;
+public class maxvalueminvalue {
+    public static void main(String[]args){
+        int[]id={1,2,3,4,5};
+        int max=id[0];
+        int min=id[0];
+        for(int num:id){
+            if(num>max)
+            {
+                max=num;
+            }
+            else if(num<min){
+                min=num;
+            }
+        }
+        int prod=max*min;
+        System.out.println("product= "+prod);
+        System.out.println("max:"+max);
+        System.out.println("min:"+min);
+    }
+}
