@@ -1,0 +1,40 @@
+import java.util.*;
+public class arraydeclarationandinitializing {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int[] age=new int[5];
+        for(int i=0;i<5;i++){
+            int a=sc.nextInt();
+            age[i]=a;
+        }
+        for(int n:age){
+        System.out.println(n);
+    }
+        char[]alpha=new char[5];
+        for(int i=0;i<5;i++){
+            char ch=sc.next().charAt(0);
+            alpha[i]=ch;
+        }
+        for(char cha:alpha){
+            System.out.println(cha);
+        }
+        String[] name=new String[5];
+        for(int i=0;i<5;i++){
+            String n=sc.next();
+            name[i]=n;
+        }
+        for(String str:name){
+            System.out.println(str);
+        }
+        int[]id={1,2,3,4,5,6,7,8,9,10};
+        int length=id.length;
+        int sum=0;
+        for(int num:id){
+            sum+=num;
+        }
+        float avg=(float)sum/length;
+        System.out.println(sum);
+        System.out.println(avg);
+
+    }
+}
