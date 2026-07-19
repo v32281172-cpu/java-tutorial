@@ -1,0 +1,91 @@
+import java.util.*;
+//public class searching {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n=sc.nextInt();
+//        int[]arr=new int[n];
+//        int target=sc.nextInt();
+//        for(int i=0;i<n;i++){
+//            arr[i]=sc.nextInt();
+//        }
+//        System.out.println(linear_search(arr,target));
+//    }
+//    public static int linear_search(int[] arr,int target){
+//        for(int i=0;i<arr.length;i++){
+//            if(arr[i]==target){
+//                return i;
+//            }
+//        }
+//        return -1;
+//    }
+//}
+
+//import java.util.*;
+//public class searching {
+//    public static void main(String[] args) {
+//        String name = "hello world";
+//        char[] name1 = name.toCharArray();
+//        char target = 'd';
+//        if (ls(name1, target)) {
+//            System.out.println("found");
+//        } else {
+//            System.out.println("not found");
+//        }
+//    }
+//    public static boolean ls(char[] name1,char target){
+//        for(char i=0;i<name1.length;i++){
+//            if(name1[i]==target){
+//                return true;
+//            }
+//        }
+//        return false;
+//}
+//}
+
+//import java.util.*;
+//public class searching {
+//    public static void main(String[] args) {
+//        Scanner sc=new Scanner(System.in);
+//        int [][]name1={{1,2,3},{4,5,6},{7,8,9}};
+//        int target=4;
+//        if(ls(name1,target)){
+//            System.out.println("found");
+//
+//        }
+//        else{
+//            System.out.println("not found");
+//        }
+//    }
+//    public static boolean ls(int[][] name1,int target){
+//        for(int i=0;i<name1.length;i++) {
+//            for (int j = 0; j < name1.length; j++) {
+//                if (name1[i][j] == target) {
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
+//    }
+//}
+
+import java.util.*;
+public class searching {
+    public static void main(String[] args) {
+        String name = "hello world";
+        char[] name1 = name.toCharArray();
+        char target = 'd';
+        if (ls(name1, target)) {
+            System.out.println("found");
+        } else {
+            System.out.println("not found");
+        }
+    }
+    public static boolean ls(char[] name1,char target){
+        for(char i=0;i<name1.length;i++){
+            if(name1[i]==target){
+                return true;
+            }
+        }
+        return false;
+    }
+}
