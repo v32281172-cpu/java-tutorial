@@ -1,0 +1,32 @@
+import java.util.*;
+    class All {
+        int a=1;
+        int b=2;
+        void display() {
+            System.out.println(a+" "+b);
+        }
+    }
+    class Bell extends All {
+        void show(){
+
+            System.out.println(a-b);
+        }
+    }
+    class C extends Bell{
+        void fly(){
+            System.out.println("Hello");
+        }
+    }
+
+    public class Multipleinheritance {
+        public static void main(String[]args){
+            All a=new All();
+            Bell b=new Bell();
+            C c=new C();
+            b.show();
+            b.display();
+            c.fly();
+            c.show();
+            c.display();
+        }
+    }
