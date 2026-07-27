@@ -1,0 +1,15 @@
+import java.util.*;
+public class longestworldinString {
+    public static void main(String[] args) {
+        String name ="The dog is barking";
+        String[] words=name.split(" ");
+        String longword=words[0];
+        for(String s:words){
+            if(s.length()>longword.length()){
+                longword=s;
+            }
+        }
+        System.out.println(longword);
+
+    }
+}
