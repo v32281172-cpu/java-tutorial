@@ -1,0 +1,28 @@
+import java.util.*;
+class AA{
+    AA(){
+        super();
+        System.out.println("Print the Value of A");
+    }
+    AA(int a){
+        this();
+        System.out.println("Print the value of A"+a);
+    }
+}
+class BB extends AA{
+    BB(){
+
+    }
+    BB(int a,int b){
+
+    }
+    BB(int a){
+        this();
+        System.out.println("Print the value of B"+a);
+    }
+}
+public class thisandsuperclass {
+    public static void main(String[]args){
+        BB b=new BB(10);
+    }
+}
