@@ -1,0 +1,38 @@
+import java.util.*;
+class car{
+    void station(){
+        System.out.println("Petrol station");
+    }
+}
+class EVcar extends car{
+    void station(){
+        System.out.println("EV station");
+    }
+}
+class petrolcar extends car{
+    void station(){
+        System.out.println("petrol station is not working");
+    }
+}
+class animal{
+    void sound(){
+        System.out.println("sound made by animal");
+    }
+}
+class dog extends animal{
+    void sound(){
+        System.out.println("Sound made by dog");
+    }
+}
+public class methodoverriding {
+    public static void main(String[]args){
+//        EVcar ev=new EVcar();
+//        ev.station();
+//        petrolcar pc=new petrolcar();
+//        pc.station();
+        animal an=new animal();
+        dog d=new dog();
+        d.sound();
+        an.sound();
+    }
+}
