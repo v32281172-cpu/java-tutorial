@@ -1,0 +1,28 @@
+class V{
+    private int a;
+    private int b;
+    private String name;
+    V(int a,int b,String name){
+        this.a=a;
+        this.b=b;
+        this.name=name;
+    }
+    void setID(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    int getV(){
+        return this.a;
+    }int getB(){
+        return this.b;
+    }
+    void display(){
+        System.out.println(a+" "+b+" "+name);
+    }
+}
+public class Encapsultion {
+    public static void main(String[]args){
+        V a=new V(10,20,"Vaishu");
+        a.display();
+    }
+}
