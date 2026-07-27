@@ -1,0 +1,23 @@
+import java.util.*;
+class A {
+    int a=1;
+    int b=2;
+    void display() {
+        System.out.println(a+" "+b);
+    }
+}
+    class B extends A{
+        void show(){
+
+            System.out.println(a-b);
+        }
+    }
+
+public class Singleinheritance {
+    public static void main(String[]args){
+        A a=new A();
+        B b=new B();
+        b.show();
+        b.display();
+    }
+}
