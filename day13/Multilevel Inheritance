@@ -1,0 +1,27 @@
+import java.util.*;
+class An{
+    void display(){
+        System.out.println("Vaishnavi");
+    }
+}
+class Bn extends An{
+    void show(){
+        System.out.println("Vaishu");
+    }
+}
+class Cn extends Bn{
+    void Break(){
+        System.out.println("Vaish");
+    }
+}
+public class Multilevel {
+    public static void main(String[]args){
+        An a=new An();
+        Bn b=new Bn();
+        Cn c=new Cn();
+        b.display();
+        c.Break();
+        c.display();
+        c.show();
+    }
+}
