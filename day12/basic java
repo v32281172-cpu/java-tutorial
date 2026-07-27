@@ -1,0 +1,39 @@
+import java.util.*;
+class A{
+    int age;
+    int id;
+    String name;
+    int booknum;
+    int id1 ;
+   A(int n){
+       System.out.println(n+n);
+   }
+   A(String s){
+       System.out.println(s);
+   }
+   A(int age,int id,String name){
+       this.age=age;
+       this.name=name;
+       this.id=id;
+   }
+   A(int i,int n1){
+       booknum=i;
+       id1=n1;
+   }
+   void show(){
+       System.out.println(booknum+" "+id1);
+   }
+   void display(){
+       System.out.println(name+" "+age+" "+id);
+   }
+}
+public class basic {
+    public static void main(String[] args){
+        A p1=new A(21,1234,"Vaishu");
+        A p2=new A(23,2245,"vaishu");
+        p1.display();
+        p2.display();
+        A p3=new A(456,1000);
+        p3.show();
+    }
+}
